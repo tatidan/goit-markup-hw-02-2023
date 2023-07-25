@@ -46,7 +46,7 @@ button {
   letter-spacing: 3%;
   color: inherit;
 }
-.logo-primary-brand {
+.logo-accent {
   color: var(--primary-brand-color);
 }
 .logo-white {
