@@ -84,6 +84,7 @@ button {
   color: var(--white-color);
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 
@@ -113,6 +114,8 @@ button {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
 }
 .advantage-description {
   color: var(--text-color);
@@ -127,6 +130,8 @@ button {
   text-align: center;
   text-transform: capitalize;
   font-weight: 500;
+  color: var(--primary-black-color);
+  letter-spacing: 0.02em;
 }
 
 /* TEAM section */
@@ -150,7 +155,7 @@ button {
 }
 
 .footer-slogan {
-  color: var(--white-color);
+  color: var(--light-color);
 }
 
 /* PORTFOLIO page */
