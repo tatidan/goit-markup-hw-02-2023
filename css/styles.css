@@ -1,0 +1,181 @@
+:root {
+  --primary-black-color: #2e2f42;
+  --secondary-text-color: #434455;
+  --white-color: #ffffff;
+  --light-color: #f4f4fd;
+  --accent-color: #e7e9fc;
+  --secondary-white-color: #e5e5e5;
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-black-color);
+  background-color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* HEADER */
+
+/* .header{  
+  shadow -  #434455
+} */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  color: inherit;
+}
+.logo-primary-brand {
+  color: var(--primary-brand-color);
+}
+.logo-white {
+  color: var(--light-color);
+}
+
+.header-navigation .nav-link {
+  color: var(--primary-black-color);
+}
+
+.header-navigation .nav-link.current {
+  color: var(--primary-brand-color);
+}
+
+.header-address .address-link {
+  color: var(--secondary-text-color);
+}
+
+.header-navigation .nav-link:hover,
+.header-navigation .nav-link:focus,
+.header-address .address-link:hover,
+.header-address .address-link:focus {
+  color: var(--primary-brand-color);
+}
+
+/* MAIN page */
+/* HERO section */
+
+.hero {
+  background-color: var(--primary-black-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+.hero-button {
+  font-size: inherit;
+  line-height: inherit;
+  background-color: var(--primary-brand-color);
+  color: var(--white-color);
+  letter-spacing: 4%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--pressed-state-color);
+}
+
+/* ADVANTAGES section */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantage-title,
+.team-name {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.advantage-description {
+  color: var(--secondary-text-color);
+}
+
+/* SERVICES section */
+
+.services-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+/* TEAM section */
+
+.team {
+  background-color: var(--light-color);
+}
+
+.team-card {
+  background-color: var(--white-color);
+}
+
+.team-role {
+  color: var(--secondary-text-color);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--primary-black-color);
+}
+
+.footer-slogan {
+  color: var(--white-color);
+}
+
+/* PORTFOLIO page */
+
+.gallery-button {
+  background-color: var(--light-color);
+  color: var(--primary-brand-color);
+  border: 1px solid var(--accent-color);
+  letter-spacing: 4%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-button:hover,
+.gallery-button:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-color);
+}
+
+.gallery-card-title {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.gallery-card-desc {
+  color: var(--secondary-text-color);
+}
