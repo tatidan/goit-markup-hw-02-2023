@@ -1,6 +1,6 @@
 :root {
   --primary-black-color: #2e2f42;
-  --secondary-text-color: #434455;
+  --text-color: #434455;
   --white-color: #ffffff;
   --light-color: #f4f4fd;
   --accent-color: #e7e9fc;
@@ -11,18 +11,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--primary-black-color);
+  color: var(--text-color);
   background-color: var(--white-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
-ul {
-  list-style-type: none;
+.list {
+  list-style: none;
 }
 
-a {
+a,
+.link {
   text-decoration: none;
   font-style: normal;
 }
@@ -43,8 +44,8 @@ button {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 1.17;
-  letter-spacing: 3%;
-  color: inherit;
+  letter-spacing: 0.03em;
+  color: var(--primary-black-color);
 }
 .logo-accent {
   color: var(--primary-brand-color);
@@ -62,14 +63,14 @@ button {
 }
 
 .header-address .address-link {
-  color: var(--secondary-text-color);
+  color: var(--text-color);
 }
 
 .header-navigation .nav-link:hover,
 .header-navigation .nav-link:focus,
 .header-address .address-link:hover,
 .header-address .address-link:focus {
-  color: var(--primary-brand-color);
+  color: var(--pressed-state-color);
 }
 
 /* MAIN page */
@@ -83,14 +84,16 @@ button {
   color: var(--white-color);
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
 }
 
 .hero-button {
   font-size: inherit;
   line-height: inherit;
+  font-weight: 500;
   background-color: var(--primary-brand-color);
   color: var(--white-color);
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -102,25 +105,17 @@ button {
 /* ADVANTAGES section */
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  color: rgba(0, 0, 0, 0);
 }
 
 .advantage-title,
 .team-name {
   font-size: 20px;
   line-height: 1.2;
+  font-weight: 500;
 }
 .advantage-description {
-  color: var(--secondary-text-color);
+  color: var(--text-color);
 }
 
 /* SERVICES section */
@@ -129,6 +124,9 @@ button {
 .team-title {
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 /* TEAM section */
@@ -142,7 +140,7 @@ button {
 }
 
 .team-role {
-  color: var(--secondary-text-color);
+  color: var(--text-color);
 }
 
 /* FOOTER */
@@ -177,5 +175,5 @@ button {
 }
 
 .gallery-card-desc {
-  color: var(--secondary-text-color);
+  color: var(--text-color);
 }
